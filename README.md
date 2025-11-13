@@ -88,7 +88,7 @@ Clonar el repositorio:
 
 bash
 Copiar código
-git clone https://github.com/tuusuario/TiendaDeRopa.git
+git clone [https://github.com/tuusuario/TiendaDeRopa.git](https://github.com/Alejomanzano/TiendaDeRopa.git)
 Abrir la solución TiendaDeRopa.sln en Visual Studio.
 
 Instalar el paquete NuGet:
