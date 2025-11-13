@@ -43,6 +43,10 @@ Tablas creadas automáticamente:
 | Usuario | Contraseña |
 |---------|------------|
 | admin   | 1234       |
+|---------|------------|
+| yue  | 123       |
+|---------|------------|
+| alejo   | 123       |
 
 > Puedes iniciar sesión con estas credenciales la primera vez que ejecutes la app.
 
@@ -121,7 +125,7 @@ SQLite-net-pcl
 Lenguajes: C# + XAML
 
 👨‍💻 Autor
-Nombre: (Tu nombre aquí)
+Nombre: Alejandro Manzano, Ainhoa Salas
 Proyecto: Tienda de Ropa (.NET MAUI)
 Fecha: 2025
 
