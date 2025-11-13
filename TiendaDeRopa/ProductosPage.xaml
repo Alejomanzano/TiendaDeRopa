@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TiendaDeRopa.ProductosPage"
+             Title="Productos">
+    <VerticalStackLayout Padding="20" Spacing="10">
+        <Entry x:Name="txtNombre" Placeholder="Nombre del producto" />
+        <Entry x:Name="txtPrecio" Placeholder="Precio" Keyboard="Numeric" />
+        <Button Text="Agregar producto" Clicked="BtnAgregar_Clicked" />
+        <CollectionView x:Name="listaProductos">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="{Binding Nombre}" />
+                        <Label Text="{Binding Precio}" />
+                        <Button Text="Eliminar" Clicked="BtnEliminar_Clicked" CommandParameter="{Binding Id}" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </VerticalStackLayout>
+</ContentPage>

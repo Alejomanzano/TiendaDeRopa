@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TiendaDeRopa.ReportesPage"
+             Title="Reportes">
+    <VerticalStackLayout Padding="20" Spacing="10">
+        <Label Text="Reporte de Ventas" FontSize="24" HorizontalOptions="Center" />
+        <Button Text="Actualizar Reporte" Clicked="BtnActualizar_Clicked" />
+        <CollectionView x:Name="listaReporte">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+                        <Label Text="{Binding Producto}" />
+                        <Label Text="{Binding Cantidad}" />
+                        <Label Text="{Binding Total}" />
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <Label x:Name="lblTotalGeneral" FontSize="18" HorizontalOptions="Center" TextColor="DarkBlue" />
+    </VerticalStackLayout>
+</ContentPage>
